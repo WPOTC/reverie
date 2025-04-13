@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-image: url(img/Gemini_Generated_Image_kdnkgfkdnkgfkdnk.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+header{
+   padding: 0 20px;
+   align-items: center;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid burlywood;
+    background: #f8f8f8;
+    
+    
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    padding-left: 100px;
+    padding-right: 10px;
+    justify-content: space-between;
+    
+    background: #f8f8f8;
+
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+header nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: burlywood;
+    padding-right: 100px;
+    background: #f8f8f8;
+    font-size: 20px;
+}
+
+
+header img{
+    
+    max-width: 150px;
+}
