@@ -1,0 +1,105 @@
+<style>
+.produto-detalhe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 60px 200px;
+    background-color: #F5E9A3;
+    border-radius: 8px;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.produto-imagem {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.produto-imagem img {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.produto-info {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.produto-info h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2d2d2d;
+}
+
+.descricao {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5b3e00;
+    margin-bottom: 20px;
+}
+
+.btn-comprar {
+    background-color: #5b3e00;
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #3e2c00;
+}
+
+.detalhes {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+</style>
+
+
+
+<main class="produto-detalhe">
+        <div class="produto-imagem">
+          <img src="img/Gemini_Generated_Image_iyh175iyh175iyh1.jpg" alt="Perfume 100ml">
+        </div>
+    
+        <div class="produto-info">
+          <h2>Incident in a Ghostland - Perfume 100ml</h2>
+          <p class="descricao">Perfume artesanal inspirado na melancolia das boas lembranças. Feito com notas de incenso, rosa, baunilha e musk. Ideal para quem sente profundamente.</p>
+          <p class="preco">R$ 129,90</p>
+          <label for="quantidade">Quantidade:</label>
+          <input type="number" id="quantidade" name="quantidade" value="1" min="1">
+          <button class="btn-comprar">Comprar</button>
+    
+          <div class="detalhes">
+            <h3>Detalhes do produto</h3>
+            <ul>
+              <li>Volume: 100ml</li>
+              <li>Família olfativa: Floral Oriental</li>
+              <li>Notas principais: Incenso, Rosa, Baunilha e Musk</li>
+              <li>Produto vegano e artesanal</li>
+            </ul>
+          </div>
+        </div>
+      </main>
