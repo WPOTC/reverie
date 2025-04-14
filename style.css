@@ -29,7 +29,7 @@
 }
 
 body{
-    background-image: url(img/Gemini_Generated_Image_kdnkgfkdnkgfkdnk-opacidade.JPG);
+    background-image: url(img/Gemini_Generated_Image_kdnkgfkdnkgfkdnk.JPG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,11 +107,18 @@ header img{
 .main-inicio{
     background-color: #bbab4f;
     border-radius: 5px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 450px;
+    margin-right: 450px;
     margin-top: -10px;
     margin-bottom: 50px;
     padding: 20px;
+    box-shadow: -1px 1px 10px burlywood;
+   
+}
+
+.main-inicio div{
+    display: flex;
+    justify-content: center;
 }
 
 .main-inicio p{
@@ -151,41 +158,222 @@ align-items: flex-start;
 
 
 
-.produtos{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 90px;
-    margin: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+
+
+
+
+
+
+.produtos-carousel p{
+    font-family: "Por Siempre Gotica", cursive;
+}
+
+
+.produtos-carousel-container {
+    position: relative;
+    margin: 50px 200px;
+    overflow: hidden;
     background-color: #F5E9A3;
     border-radius: 5px;
-    
-}
-.produtos div{
-    border: 1px solid rgb(88, 88, 88);
-    max-width: 200px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-decoration: none;
+    padding: 20px 40px;
+    box-shadow: -1px 1px 10px burlywood;
 }
 
-.link-produtos{
+.produtos-carousel {
+    display: flex;
+    gap: 90px;
+    transition: transform 0.4s ease-in-out;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    
+}
+
+.produtos-carousel::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
+.produto {
+    min-width: 200px;
+    max-width: 200px;
+    border: 1px solid rgb(88, 88, 88);
+    
+    flex-shrink: 0;
+    
+}
+
+.produto p{
+display: flex;
+ padding: 1px;
+text-align: center;
+}
+
+
+.link-produtos {
     text-decoration: none;
     color: black;
+    
 }
-    
 
 
-.produtos div img{
-    
+.produto img {
     max-width: 200px;
     border-bottom: 0.2px solid rgb(88, 88, 88);
 }
 
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #9b7c32;
+    color: #F5E9A3;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.carousel-btn.left {
+    left: 5px;
+}
+
+.carousel-btn.right {
+    right: 5px;
+}
+
+.carousel-btn:hover {
+    background-color: #715c2b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.produto-compra {
+    margin: 50px;
+    margin-left: 450px;
+    margin-right: 450px;
+    background-color: #bbab4f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -1px 1px 10px burlywood;
+  }
+
+  .produto-detalhe{
+    display: flex;
+    align-items: flex-start; 
+  }
+  
+  .produto-compra img {
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .inform-compra {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
+  }
+  
+  .inform-compra h1  {
+    margin-bottom: 10px;
+    font-family: "Chomsky", cursive;
+    font-size: 50px;
+    color: #3c2f1c;
+    margin-bottom: 30px
+  }
+
+  .inform-compra h3{
+    font-family: "WigendaTypewrite Bold", "cursive";
+  }
+
+.inform-compra label{
+font-size: 20px;
+font-family: "WigendaTypewrite Bold", "cursive";
+}
+  
+  .campos {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .botao {
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: #9b7c32;
+    color: #F5E9A3;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "WigendaTypewrite Bold", cursive;
+    transition: background-color 0.3s;
+  }
+  
+  .botao:hover {
+    background-color: #b49348;
+  }
+
+
+  .descricao-produto summary{
+    font-size: 40px;
+    font-family: "Por Siempre Gotica", "cursive";
+    box-shadow: 0 1px black;
+
+  }
+
+  .descrition-p{
+    font-family: "WigendaTypewrite Bold", "cursive";
+  }
+
+  
+
+
+
+
+
+
+
+
+  .conteudo-principal {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #bbab4f;
+    box-shadow: -1px 1px 10px burlywood;
+    border-radius: 8px;
+}
+
+.conteudo-principal h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.conteudo-principal p {
+    line-height: 2;
+    margin-bottom: 15px;
+    font-family: WigendaTypewrite;
+
+}
 
 
 
@@ -201,18 +389,7 @@ align-items: flex-start;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-footer{
+.rodape-relative{
     bottom: 0;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -220,6 +397,22 @@ footer{
     padding: 20px;
     color: #F5E9A3;
     position: relative;
+}
+
+.rodape-absolute{
+    
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #9b7c32;
+    padding: 20px 0;
+    color: #F5E9A3;
+    position: absolute;
+    width: 100%;
+}
+
+.rodape-absolute div h2, p{
+    padding-left: 50px;
 }
 
 footer h2{
