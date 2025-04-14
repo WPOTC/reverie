@@ -105,7 +105,7 @@ header img{
 }
 
 .main-inicio{
-    background-color: #bbab4f;
+    background-color: #d8ad75;
     border-radius: 5px;
     margin-left: 450px;
     margin-right: 450px;
@@ -173,7 +173,7 @@ align-items: flex-start;
     position: relative;
     margin: 50px 200px;
     overflow: hidden;
-    background-color: #F5E9A3;
+    background-color: #dab75a;
     border-radius: 5px;
     padding: 20px 40px;
     box-shadow: -1px 1px 10px burlywood;
@@ -357,23 +357,115 @@ font-family: "WigendaTypewrite Bold", "cursive";
     padding: 20px;
     max-width: 960px;
     margin: 20px auto;
-    background-color: #bbab4f;
+    background-color: #d8ad75;
     box-shadow: -1px 1px 10px burlywood;
     border-radius: 8px;
 }
 
 .conteudo-principal h1 {
+    font-size: 30px;
     color: #333;
     margin-bottom: 20px;
     text-align: center;
+    font-family: "Por Siempre Gotica", "cursive";
+    text-shadow: -1px 1px #333;
 }
 
 .conteudo-principal p {
     line-height: 2;
     margin-bottom: 15px;
-    font-family: WigendaTypewrite;
+    font-family: "WigendaTypewrite Bold", "cursive";
 
 }
+
+
+
+
+
+
+
+
+
+
+.main-contato{
+    padding: 40px;
+  font-family: 'Georgia', serif;
+  color: #000000;
+  text-align: center;
+}
+
+.main-contato h1{
+    font-family: "Por Siempre Gotica", "cursive";
+    font-size: 50px;
+    text-shadow: -1px 1px black;
+}
+
+.main-contato label{
+    font-family: "WigendaTypewrite Bold";
+    text-shadow: -1px 1px black;
+}
+
+.main-contato p{
+    font-family: "WigendaTypewrite Bold", "cursive";
+    padding-top: 10px;
+    color: #f0c769;
+    text-shadow: -1px 1px 3px black,
+    1px -1px 3px black,
+    1px 1px 3px black,
+    -1px -1px 3px black;
+}
+
+form{
+    max-width: 600px;
+  margin: 0 auto;
+  background-color: #b99a52;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.text-contato , .input-contato{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 1rem;
+    font-family: 'WigendaTypewrite Bold', serif;
+}
+
+.botao-contato{
+    background-color: rgb(236, 192, 134);
+  color: rgb(83, 57, 26);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "WigendaTypewrite Bold", "cursive";
+  font-size: 25px;
+}
+
+.botao-contato:hover{
+    background-color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
