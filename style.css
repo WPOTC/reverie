@@ -166,6 +166,16 @@ align-items: flex-start;
 
 
 
+.produtos-tocansado{
+   display: flex;
+   flex-direction: column;
+}
+
+.imagem-linha{
+    margin-bottom: -100px;
+    filter: saturate(1.4);
+}
+
 .produtos-carousel p{
     font-family: "Por Siempre Gotica", cursive;
 }
@@ -249,6 +259,8 @@ text-align: center;
 .carousel-btn:hover {
     background-color: #715c2b;
 }
+
+
 
 
 
