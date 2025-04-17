@@ -73,10 +73,12 @@ header nav ul li a{
     font-size: 40px;
     font-family: "Chomsky", 'cursive';
     text-shadow: -2px 1.5px  #9e8f39;
+    transition: all 0.05s linear;
 }
 
 header nav ul li a:hover{
     color: #715c2b;
+
 }
 
 
