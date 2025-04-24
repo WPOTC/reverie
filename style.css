@@ -95,6 +95,7 @@ header img{
 }
 .Lancamento-inicio img{
     max-width: 350px;
+    filter: sepia(0.1) brightness(0.5) contrast(2) saturate(1.9);
 }
 
 .titulo-inicio{
@@ -176,6 +177,12 @@ align-items: flex-start;
     filter: saturate(1.4);
 }
 
+.imagem-linha-fairy{
+    margin-bottom: -100px;
+    filter: sepia(0.1) brightness(0.5) contrast(2) saturate(1.9);
+    
+}
+
 .produtos-carousel p{
     font-family: "Por Siempre Gotica", cursive;
 }
@@ -189,6 +196,16 @@ align-items: flex-start;
     border-radius: 5px;
     padding: 20px 40px;
     box-shadow: -1px 1px 10px burlywood;
+}
+
+.produtos-carousel-container-fairy {
+    position: relative;
+    margin: 50px 200px;
+    overflow: hidden;
+    background-color: #e934ad;
+    border-radius: 5px;
+    padding: 20px 40px;
+    box-shadow: -1px 1px 10px rgb(129, 22, 54);
 }
 
 .produtos-carousel {
@@ -208,6 +225,15 @@ align-items: flex-start;
     min-width: 200px;
     max-width: 200px;
     border: 1px solid rgb(88, 88, 88);
+    
+    flex-shrink: 0;
+    
+}
+
+.produto-fairy {
+    min-width: 200px;
+    max-width: 200px;
+    border: 1px solid rgb(139, 2, 59);
     
     flex-shrink: 0;
     
@@ -283,12 +309,27 @@ text-align: center;
     box-shadow: -1px 1px 10px burlywood;
   }
 
+  .produto-compra-fairy {
+    margin: 50px;
+    margin-left: 450px;
+    margin-right: 450px;
+    background-color: #e934ad;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -1px 1px 10px rgb(129, 22, 54);
+  }
+
   .produto-detalhe{
     display: flex;
     align-items: flex-start; 
   }
   
   .produto-compra img {
+    max-width: 400px;
+    border-radius: 8px;
+  }
+
+  .produto-compra-fairy img {
     max-width: 400px;
     border-radius: 8px;
   }
@@ -305,6 +346,21 @@ text-align: center;
     font-family: "Chomsky", cursive;
     font-size: 50px;
     color: #3c2f1c;
+    margin-bottom: 30px
+  }
+
+  .inform-compra-fairy {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
+  }
+
+  .inform-compra-fairy h1  {
+    margin-bottom: 10px;
+    font-family: "Chomsky", cursive;
+    font-size: 50px;
+    color: #52031d;
     margin-bottom: 30px
   }
 
@@ -343,11 +399,26 @@ font-family: "WigendaTypewrite Bold", "cursive";
     font-family: "WigendaTypewrite Bold", cursive;
     transition: background-color 0.3s;
   }
+
+  .botao-fairy {
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: #7a1a37;
+    color: #e46ab1;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "WigendaTypewrite Bold", cursive;
+    transition: background-color 0.3s;
+  }
   
   .botao:hover {
     background-color: #b49348;
   }
 
+  .botao-fairy:hover {
+    background-color: #bb4165;
+  }
 
   .descricao-produto summary{
     font-size: 40px;

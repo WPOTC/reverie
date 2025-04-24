@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Rêverie</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<audio id="musica-fundo" loop>
+    <source src="../faeriesoiree.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+  
+  <script>
+    const audio = document.getElementById('musica-fundo');
+const startTime = 1; // define o ponto inicial (em segundos)
+
+// Quando o usuário passar o mouse sobre o body, a música tocará a partir do segundo 20.
+document.body.addEventListener('mouseover', () => {
+  // Se o áudio estiver antes do segundo 20, ajusta para começar a partir daí.
+  if (audio.currentTime < startTime) {
+    audio.currentTime = startTime;
+  }
+  audio.play();
+});
+
+  </script>
+
+
+
+
+<body>
+
+    <header>
+        <!-- Palavras como "Início" e "Nós" não estão com seus devidos acentos, pois a fonte não permite. Favor não considerar erro, obrigado.-->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../produtos.html">Produtos</a></li>
+                <li><a href="../sobre.html">Sobre nos</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <img src="../img/Gemini_Generated_Image_d7i4kzd7i4kzd7i4-removebg-preview.png" alt="Logo da empresa">
+
+    </header>
+
+    <section class="produto-compra-fairy">
+        <div class="produto-detalhe">
+            <img src="../img-faeriesoiree/Gemini_Generated_Image_gh8x77gh8x77gh8x.jpeg" alt="kit">
+
+            <div class="inform-compra-fairy">
+                <h1>Faerie Soirée - Creme Hidratante 200g</h1>
+                <h3>R$119,90</h3>
+                <label for="quantidade">Quantidade:</label>
+                <input class="campos" type="number" name="quantidade" max="10" min="1" value="1">
+
+                <label for="cep">Calcular frete:</label>
+                <input class="campos" type="text" id="cep" placeholder="Digite seu CEP" maxlength="9">
+
+                <div class="botoes">
+                    <button class="botao-fairy">Calcular</button>
+                </div>
+                <div class="botoes">
+                    <button class="botao-fairy">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <details class="descricao-produto">
+            <summary>Descrição</summary>
+            <p class="descrition-p">Desperte a sensação de liberdade e euforia com o creme hidratante Faerie Soirée, uma experiência mística e encantadora para a sua pele. Sua fórmula rica e suave nutre profundamente, proporcionando hidratação intensa enquanto a fragrância atemporal de frutas mágicas e madeiras sedutoras envolve os sentidos.</p>
+            <p class="descrition-p">Com um coração frutado de cereja, o creme é delicadamente envolvido por notas sensuais de âmbar e madeiras, criando uma sensação de prazer e mistério, como se você fosse transportado para uma festa de fadas encantadas. A magia das fadas se reflete na textura leve e cremosa que deixa a pele macia, com um toque aveludado, sem pesar.</p>
+            <p class="descrition-p">Ideal para quem busca se sentir envolvido por uma aura de euforia e liberdade, o creme hidratante Faerie Soirée é mais do que um simples cuidado, é um convite a escapar da realidade e se entregar ao prazer de um universo encantado e cheio de mistério.</p>
+        </details>
+        <details class="descricao-produto">
+            <summary>Pirâmide Olfativa</summary>
+                <ul class="descrition-p">
+                    <h3>Notas de Topo</h3>
+                    <li>Cereja silvestre</li>
+    <li>Framboesa branca</li>
+    <li>Aldeído solar</li>
+    <li>Pétalas de peônia rosa</li>
+                </ul>
+<BR></BR>
+                <ul class="descrition-p">
+                    <h3>Notas de Coração</h3>
+    <li>Licor de cassis</li>
+    <li>Jasmim grandiflorum</li>
+    <li>Orquídea baunilhada</li>
+    <li>Violeta cristalizada</li>
+    <li>Vinho tinto</li>
+    <li>Morango Silvestre</li>
+    <li>Framboesa Silvestre</li>
+                </ul>
+<BR></BR>
+                <ul class="descrition-p">
+                    <h3>Notas de Fundo</h3>
+                    <li>Âmbar dourado</li>
+                    <li>Sândalo cremoso</li>
+                    <li>Benjoim do Sião</li>
+                    <li>Patchouli luminoso</li>
+                    <li>Musgo de carvalho</li>
+                </ul>
+            
+
+        </details>
+        <details class="descricao-produto">
+            <summary>Especificações</summary>
+            <p class="descrition-p">Marca: Revêrie</p>
+            <p class="descrition-p">Linha: Faerie Soiree</p>
+            <p class="descrition-p">Conteúdo: Creme Hidratante 200g</p>
+            <p class="descrition-p">Família olfativa: Frutado-amadeirado-floral</p>
+        </details>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="rodape-relative">
+
+        <div>
+            <h2>Rêverie</h2>
+            <p>-perfumes artesanais para os que sentem demais-</p>
+        </div>
+        <br>
+        <div class="rodape">
+
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li class="links-rodape">(99) 99999-9999</li>
+                    <li class="links-rodape">reverie@gmail.com</li>
+                    <li><a class="links-rodape" href="">Reclame aqui!</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Redes sociais</h4>
+                <ul>
+                    <li>Instagram: <a class="links-rodape" href="">@reverie</a></li>
+                    <li>Facebook: <a class="links-rodape" href="">Rêverie Oficial</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Informações adicionais</h4>
+                <ul>
+                    <li>CNPJ: 12.345.678/0001-90</li>
+                    <li><a class="links-rodape" href="">Termos de uso</a></li>
+                    <li><a class="links-rodape" href="">Política de privacidade</a></li>
+                    <li><a class="links-rodape" href="">Trocas e devoluções</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <br>
+        <div class="copyright-rodape">
+            <h3>&copy; 2025 Rêverie</h3>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

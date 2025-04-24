@@ -30,10 +30,31 @@
 ;
 
 
+
+
+    function scrollCarousel(direction) {
+        const carousel = document.getElementById("carousel-fairy");
+        const itemWidth = 290; // 200px largura + 90px gap
+        const itemsToScroll = 2;
+        const scrollAmount = itemWidth * itemsToScroll;
+
+        currentScroll += direction * scrollAmount;
+
+        // Impede de ir além dos limites
+        if (currentScroll < 0) currentScroll = 0;
+        if (currentScroll > carousel.scrollWidth - carousel.clientWidth) {
+            currentScroll = carousel.scrollWidth - carousel.clientWidth;
+        }
+
+        carousel.scrollTo({ left: currentScroll, behavior: 'smooth' });
+    }
+
+;
+
 </script>
 
 <audio id="musica-fundo" loop>
-    <source src="ojos.mp3" type="audio/mpeg">
+    <source src="faeriesoiree.mp3" type="audio/mpeg">
     Seu navegador não suporta áudio HTML5.
   </audio>
 
@@ -82,32 +103,32 @@ document.body.addEventListener('mouseover', () => {
         <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
     
         <div class="produtos-carousel" id="carousel">
-            <div class="produto"><a class="link-produtos" href="IIAG-perfum100ml.html">
+            <div class="produto"><a class="link-produtos" href="produtos-IIAG/IIAG-perfum100ml.html">
                 <img src="img/Gemini_Generated_Image_iyh175iyh175iyh1.jpg" alt="perfume 100ml">
                 <p>Incident in a ghostland - Perfume 100ml</p>
             </a></div>
     
-            <div class="produto"><a class="link-produtos" href="IIAG-kit.html">
+            <div class="produto"><a class="link-produtos" href="produtos-IIAG/IIAG-kit.html">
                 <img src="img/Gemini_Generated_Image_vwx3movwx3movwx3.jpg" alt="kit perfume 50ml + sabonete">
                 <p>Kit Incident in a Ghostland - Perfume 25ml + Sabonete</p>
             </a></div>
     
-            <div class="produto"><a class="link-produtos" href="IIAG-vela.html">
+            <div class="produto"><a class="link-produtos" href="produtos-IIAG/IIAG-vela.html">
                 <img src="img/Gemini_Generated_Image_wmfljmwmfljmwmfl.jpg" alt="vela aromatizada">
                 <p>Incident in a ghostland - Vela Aromatizada</p>
             </a></div>
     
-            <div class="produto"><a class="link-produtos" href="IIAG-sabonetes.html">
+            <div class="produto"><a class="link-produtos" href="produtos-IIAG/IIAG-sabonetes.html">
                 <img src="img/Gemini_Generated_Image_pnnikepnnikepnni.jpg" alt="Caixa de sabonetes">
                 <p>Incident in a ghostland - Caixa de Sabonetes (8 unidades)</p>
             </a></div>
     
-            <div class="produto"><a class="link-produtos" href="IIAG-oleo.html">
+            <div class="produto"><a class="link-produtos" href="produtos-IIAG/IIAG-oleo.html">
                 <img src="img/Gemini_Generated_Image_skcri7skcri7skcr.jpg" alt="óleo corporal">
                 <p>Incident in a ghostland - Óleo Corporal 200ml</p>
             </a></div>
     
-            <div class="produto"><a class="link-produtos" href="IIAG-hidratante.html">
+            <div class="produto"><a class="link-produtos" href="produtos-IIAG/IIAG-hidratante.html">
                 <img src="img/Gemini_Generated_Image_mmlwjvmmlwjvmmlw.jpg" alt="Creme hidratante">
                 <p>Incident in a ghostland - Creme Hidratante</p>
             </a></div>
@@ -119,6 +140,54 @@ document.body.addEventListener('mouseover', () => {
     <br>
     
 
+
+
+
+
+    <div class="produtos-tocansado">
+        <div class="imagem-linha-fairy">
+          <img src="img-faeriesoiree/Texto_do_seu_parágrafo__3_-removebg-preview.png" alt="">
+        </div>
+  
+  
+      <section class="produtos-carousel-container-fairy">
+          <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+      
+          <div class="produtos-carousel" id="carousel-fairy">
+              <div class="produto"><a class="link-produtos" href="produtos-FS/FS-perfume100ml.html">
+                  <img src="img-faeriesoiree/Gemini_Generated_Image_tf77uxtf77uxtf77.jpeg">
+                  <p>Faerie Soiree - Perfume 100ml</p>
+              </a></div>
+      
+              <div class="produto"><a class="link-produtos" href="produtos-FS/FS-kit.html">
+                  <img src="img-faeriesoiree/Gemini_Generated_Image_e0uazze0uazze0ua.jpeg" alt="kit perfume 50ml + sabonete">
+                  <p>Kit Faerie Soiree - Perfume 25ml + Sabonete</p>
+              </a></div>
+      
+              <div class="produto"><a class="link-produtos" href="produtos-FS/FS-vela.html">
+                  <img src="img-faeriesoiree/Gemini_Generated_Image_unozt2unozt2unoz.jpeg">
+                  <p>Faerie Soiree - Vela Aromatizada</p>
+              </a></div>
+      
+              <div class="produto"><a class="link-produtos" href="produtos-FS/FS-sabonetes.html">
+                  <img src="img-faeriesoiree/Gemini_Generated_Image_c1jllrc1jllrc1jl.jpeg" alt="Caixa de sabonetes">
+                  <p>Faerie Soiree - Caixa de Sabonetes (9 unidades)</p>
+              </a></div>
+      
+              <div class="produto"><a class="link-produtos" href="produtos-FS/FS-oleo.html">
+                  <img src="img-faeriesoiree/Gemini_Generated_Image_wj1xvvwj1xvvwj1x.jpeg">
+                  <p>Faerie Soiree - Óleo Corporal 200ml</p>
+              </a></div>
+      
+              <div class="produto"><a class="link-produtos" href="produtos-FS/FS-hidratante.html">
+                  <img src="img-faeriesoiree/Gemini_Generated_Image_gh8x77gh8x77gh8x.jpeg">
+                  <p>Faerie Soiree - Creme Hidratante</p>
+              </a></div>
+          </div>
+      
+          <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+      </section>
+  </div>
 
 
 

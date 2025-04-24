@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Rêverie</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<audio id="musica-fundo" loop>
+    <source src="../faeriesoiree.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+  
+  <script>
+    const audio = document.getElementById('musica-fundo');
+const startTime = 1; // define o ponto inicial (em segundos)
+
+// Quando o usuário passar o mouse sobre o body, a música tocará a partir do segundo 20.
+document.body.addEventListener('mouseover', () => {
+  // Se o áudio estiver antes do segundo 20, ajusta para começar a partir daí.
+  if (audio.currentTime < startTime) {
+    audio.currentTime = startTime;
+  }
+  audio.play();
+});
+
+  </script>
+
+
+
+
+<body>
+
+    <header>
+        <!-- Palavras como "Início" e "Nós" não estão com seus devidos acentos, pois a fonte não permite. Favor não considerar erro, obrigado.-->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../produtos.html">Produtos</a></li>
+                <li><a href="../sobre.html">Sobre nos</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <img src="../img/Gemini_Generated_Image_d7i4kzd7i4kzd7i4-removebg-preview.png" alt="Logo da empresa">
+
+    </header>
+
+    <section class="produto-compra-fairy">
+        <div class="produto-detalhe">
+            <img src="../img-faeriesoiree/Gemini_Generated_Image_e0uazze0uazze0ua.jpeg" alt="kit">
+
+            <div class="inform-compra-fairy">
+                <h1>Kit Faerie Soirée - Perfume 25ml + Sabonetel</h1>
+                <h3>R$149,90</h3>
+                <label for="quantidade">Quantidade:</label>
+                <input class="campos" type="number" name="quantidade" max="10" min="1" value="1">
+
+                <label for="cep">Calcular frete:</label>
+                <input class="campos" type="text" id="cep" placeholder="Digite seu CEP" maxlength="9">
+
+                <div class="botoes">
+                    <button class="botao-fairy">Calcular</button>
+                </div>
+                <div class="botoes">
+                    <button class="botao-fairy">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <details class="descricao-produto">
+            <summary>Descrição</summary>
+            <p class="descrition-p">Mergulhe no universo onírico da Faerie Soirée com este kit exclusivo, que traz o perfume em versão de 25ml e um sabonete artesanal luxuoso, ideal para momentos de autocuidado cheios de encanto. O frasco compacto preserva toda a intensidade da fragrância original, com seu coração frutado de cereja silvestre e licor de cassis, envolto em notas florais brilhantes e uma base sensual de âmbar e sândalo. É o convite perfeito para carregar a euforia e a liberdade da festa das fadas para onde você for.</p>
+            <p class="descrition-p">O sabonete que acompanha o kit é uma verdadeira joia. Produzido artesanalmente, ele é enriquecido com manteiga de karité e óleos vegetais, oferecendo uma espuma cremosa e delicadamente perfumada. Sua fragrância harmoniza perfeitamente com o perfume, envolvendo a pele em um véu mágico de frutas encantadas e flores cristalizadas, deixando um rastro místico e sensual após o banho. A textura é suave como um toque de pó de fada — uma experiência sensorial envolvente do início ao fim.</p>
+            <p class="descrition-p">Com design delicado e toque vintage, o Kit Faerie Soirée é uma opção encantadora para presentear alguém especial ou para se mimar com uma dose diária de fantasia e prazer. A embalagem traz elementos da natureza mágica — asas de fada, cristais e musgos — remetendo ao universo sedutor e etéreo da linha. Mais do que um conjunto de beleza, este kit é um ritual de escapismo, onde cada detalhe celebra a liberdade, a ilusão e o prazer de ser quem se é.</p>
+        </details>
+        <details class="descricao-produto">
+            <summary>Pirâmide Olfativa</summary>
+                <ul class="descrition-p">
+                    <h3>Notas de Topo</h3>
+                    <li>Cereja silvestre</li>
+    <li>Framboesa branca</li>
+    <li>Aldeído solar</li>
+    <li>Pétalas de peônia rosa</li>
+                </ul>
+<BR></BR>
+                <ul class="descrition-p">
+                    <h3>Notas de Coração</h3>
+    <li>Licor de cassis</li>
+    <li>Jasmim grandiflorum</li>
+    <li>Orquídea baunilhada</li>
+    <li>Violeta cristalizada</li>
+    <li>Vinho tinto</li>
+    <li>Morango Silvestre</li>
+    <li>Framboesa Silvestre</li>
+                </ul>
+<BR></BR>
+                <ul class="descrition-p">
+                    <h3>Notas de Fundo</h3>
+                    <li>Âmbar dourado</li>
+                    <li>Sândalo cremoso</li>
+                    <li>Benjoim do Sião</li>
+                    <li>Patchouli luminoso</li>
+                    <li>Musgo de carvalho</li>
+                </ul>
+            
+
+        </details>
+        <details class="descricao-produto">
+            <summary>Especificações</summary>
+            <p class="descrition-p">Marca: Revêrie</p>
+            <p class="descrition-p">Linha: Faerie Soiree</p>
+            <p class="descrition-p">Conteúdo: Perfume 25ml + Sabonete 80g</p>
+            <p class="descrition-p">Família olfativa: Frutado-amadeirado-floral</p>
+        </details>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="rodape-relative">
+
+        <div>
+            <h2>Rêverie</h2>
+            <p>-perfumes artesanais para os que sentem demais-</p>
+        </div>
+        <br>
+        <div class="rodape">
+
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li class="links-rodape">(99) 99999-9999</li>
+                    <li class="links-rodape">reverie@gmail.com</li>
+                    <li><a class="links-rodape" href="">Reclame aqui!</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Redes sociais</h4>
+                <ul>
+                    <li>Instagram: <a class="links-rodape" href="">@reverie</a></li>
+                    <li>Facebook: <a class="links-rodape" href="">Rêverie Oficial</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Informações adicionais</h4>
+                <ul>
+                    <li>CNPJ: 12.345.678/0001-90</li>
+                    <li><a class="links-rodape" href="">Termos de uso</a></li>
+                    <li><a class="links-rodape" href="">Política de privacidade</a></li>
+                    <li><a class="links-rodape" href="">Trocas e devoluções</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <br>
+        <div class="copyright-rodape">
+            <h3>&copy; 2025 Rêverie</h3>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

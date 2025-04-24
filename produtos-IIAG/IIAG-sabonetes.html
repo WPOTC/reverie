@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Rêverie</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<audio id="musica-fundo" loop>
+    <source src="../ojos.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+  
+  <script>
+    const audio = document.getElementById('musica-fundo');
+const startTime = 1; // define o ponto inicial (em segundos)
+
+// Quando o usuário passar o mouse sobre o body, a música tocará a partir do segundo 20.
+document.body.addEventListener('mouseover', () => {
+  // Se o áudio estiver antes do segundo 20, ajusta para começar a partir daí.
+  if (audio.currentTime < startTime) {
+    audio.currentTime = startTime;
+  }
+  audio.play();
+});
+
+  </script>
+
+
+<body>
+
+    <header>
+        <!-- Palavras como "Início" e "Nós" não estão com seus devidos acentos, pois a fonte não permite. Favor não considerar erro, obrigado.-->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../produtos.html">Produtos</a></li>
+                <li><a href="../sobre.html">Sobre nos</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <img src="../img/Gemini_Generated_Image_d7i4kzd7i4kzd7i4-removebg-preview.png" alt="Logo da empresa">
+
+    </header>
+
+    <section class="produto-compra">
+        <div class="produto-detalhe">
+            <img src="../img/Gemini_Generated_Image_pnnikepnnikepnni.jpg" alt="Caixa de sabonetes">
+
+            <div class="inform-compra">
+                <h1>Incident in a ghostland - Caixa de Sabonetes </h1>
+                <h3>R$159,90</h3>
+                <label for="quantidade">Quantidade:</label>
+                <input class="campos" type="number" name="quantidade" max="10" min="1" value="1">
+
+                <label for="cep">Calcular frete:</label>
+                <input class="campos" type="text" id="cep" placeholder="Digite seu CEP" maxlength="9">
+
+                <div class="botoes">
+                    <button class="botao">Calcular</button>
+                </div>
+                <div class="botoes">
+                    <button class="botao">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <details class="descricao-produto">
+            <summary>Descrição</summary>
+            <p class="descrition-p">Quatro portais. Quatro escapes. Quatro versões da mesma névoa.
+                A caixa de sabonetes Incident in a Ghostland reúne peças únicas, esculpidas artesanalmente, que transformam o banho em um rito poético.</p>
+            <p class="descrition-p">Cada sabonete traz em si a essência da fragrância que deu origem à linha — misteriosa, profunda, quase cinematográfica. Nós da Rêverie acreditamos que o luxo não está no excesso, mas na intenção: por isso cada unidade é feita à mão, com carvão ativado, óleos naturais e extratos botânicos..</p>
+            <p class="descrition-p">Não são apenas sabonetes — são fragmentos de um universo onde a realidade se dobra à imaginação.</p>
+        </details>
+        <details class="descricao-produto">
+            <summary>Pirâmide Olfativa</summary>
+                <ul class="descrition-p">
+                    <h3>Notas de Topo</h3>
+                    <li>Lavanda francesa</li>
+                    <li>Aldeído C-12 MNA</li>
+                    <li>Aldeído c-10</li>
+                    <li>Flor de laranjeira</li>
+                </ul>
+<BR></BR>
+                <ul class="descrition-p">
+                    <h3>Notas de Coração</h3>
+                    <li>Rosa damascena</li>
+                    <li>Violeta</li>
+                    <li>Jasmim sambac</li>
+                    <li>Heliotropina</li>
+                    <li>Olíbano</li>
+                </ul>
+<BR></BR>
+                <ul class="descrition-p">
+                    <h3>Notas de Fundo</h3>
+                    <li>Musk branco</li>
+                    <li>Baunilha de madagascar</li>
+                    <li>Benjoim resinioide</li>
+                    <li>Iso E Super</li>
+                    <li>Essência de incenso </li>
+                    <li>Âmbar</li>
+                    <li>Sândalo</li>
+                </ul>
+            
+
+        </details>
+        <details class="descricao-produto">
+            <summary>Especificações</summary>
+            <p class="descrition-p">Marca: Revêrie</p>
+            <p class="descrition-p">Linha: Incident in a ghostland</p>
+            <p class="descrition-p">Conteúdo: 8 Sabonetes 80g</p>
+            <p class="descrition-p">Família olfativa: Floral-Incensado</p>
+        </details>
+    </section>
+
+
+
+
+
+
+    <footer class="rodape-relative">
+
+        <div>
+            <h2>Rêverie</h2>
+            <p>-perfumes artesanais para os que sentem demais-</p>
+        </div>
+        <br>
+        <div class="rodape">
+
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li class="links-rodape">(99) 99999-9999</li>
+                    <li class="links-rodape">reverie@gmail.com</li>
+                    <li><a class="links-rodape" href="">Reclame aqui!</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Redes sociais</h4>
+                <ul>
+                    <li>Instagram: <a class="links-rodape" href="">@reverie</a></li>
+                    <li>Facebook: <a class="links-rodape" href="">Rêverie Oficial</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Informações adicionais</h4>
+                <ul>
+                    <li>CNPJ: 12.345.678/0001-90</li>
+                    <li><a class="links-rodape" href="">Termos de uso</a></li>
+                    <li><a class="links-rodape" href="">Política de privacidade</a></li>
+                    <li><a class="links-rodape" href="">Trocas e devoluções</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <br>
+        <div class="copyright-rodape">
+            <h3>&copy; 2025 Rêverie</h3>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
