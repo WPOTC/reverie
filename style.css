@@ -29,7 +29,7 @@
 }
 
 body{
-    background-image: url(img/Gemini_Generated_Image_kdnkgfkdnkgfkdnk-opacidade.JPG);
+    background-image: url("img/fundo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,10 +73,12 @@ header nav ul li a{
     font-size: 40px;
     font-family: "Chomsky", 'cursive';
     text-shadow: -2px 1.5px  #9e8f39;
+    transition: all 0.05s linear;
 }
 
 header nav ul li a:hover{
     color: #715c2b;
+
 }
 
 
@@ -105,13 +107,20 @@ header img{
 }
 
 .main-inicio{
-    background-color: #bbab4f;
+    background-color: #d8ad75;
     border-radius: 5px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 490px;
+    margin-right: 490px;
     margin-top: -10px;
     margin-bottom: 50px;
     padding: 20px;
+    box-shadow: -1px 1px 10px burlywood;
+   
+}
+
+.main-inicio div{
+    display: flex;
+    justify-content: center;
 }
 
 .main-inicio p{
@@ -151,41 +160,315 @@ align-items: flex-start;
 
 
 
-.produtos{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 90px;
-    margin: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: #F5E9A3;
-    border-radius: 5px;
-    
-}
-.produtos div{
-    border: 1px solid rgb(88, 88, 88);
-    max-width: 200px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-decoration: none;
+
+
+
+
+
+
+.produtos-tocansado{
+   display: flex;
+   flex-direction: column;
 }
 
-.link-produtos{
+.imagem-linha{
+    margin-bottom: -100px;
+    filter: saturate(1.4);
+}
+
+.produtos-carousel p{
+    font-family: "Por Siempre Gotica", cursive;
+}
+
+
+.produtos-carousel-container {
+    position: relative;
+    margin: 50px 200px;
+    overflow: hidden;
+    background-color: #dab75a;
+    border-radius: 5px;
+    padding: 20px 40px;
+    box-shadow: -1px 1px 10px burlywood;
+}
+
+.produtos-carousel {
+    display: flex;
+    gap: 90px;
+    transition: transform 0.4s ease-in-out;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    
+}
+
+.produtos-carousel::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
+.produto {
+    min-width: 200px;
+    max-width: 200px;
+    border: 1px solid rgb(88, 88, 88);
+    
+    flex-shrink: 0;
+    
+}
+
+.produto p{
+display: flex;
+ padding: 1px;
+text-align: center;
+}
+
+
+.link-produtos {
     text-decoration: none;
     color: black;
+    
 }
-    
 
 
-.produtos div img{
-    
+.produto img {
     max-width: 200px;
     border-bottom: 0.2px solid rgb(88, 88, 88);
 }
 
+.carousel-btn {
+    position:   absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #9b7c32;
+    color: #F5E9A3;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px;
+    
+}
+
+
+.carousel-btn.left {
+    left: 5px;
+}
+
+.carousel-btn.right {
+    right: 5px;
+}
+
+.carousel-btn:hover {
+    background-color: #715c2b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.produto-compra {
+    margin: 50px;
+    margin-left: 450px;
+    margin-right: 450px;
+    background-color: #bbab4f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -1px 1px 10px burlywood;
+  }
+
+  .produto-detalhe{
+    display: flex;
+    align-items: flex-start; 
+  }
+  
+  .produto-compra img {
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .inform-compra {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
+  }
+  
+  .inform-compra h1  {
+    margin-bottom: 10px;
+    font-family: "Chomsky", cursive;
+    font-size: 50px;
+    color: #3c2f1c;
+    margin-bottom: 30px
+  }
+
+  .inform-compra h3{
+    font-family: "WigendaTypewrite Bold", "cursive";
+  }
+
+.inform-compra label{
+font-size: 20px;
+font-family: "WigendaTypewrite Bold", "cursive";
+}
+  
+  .campos {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .botao {
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: #9b7c32;
+    color: #F5E9A3;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "WigendaTypewrite Bold", cursive;
+    transition: background-color 0.3s;
+  }
+  
+  .botao:hover {
+    background-color: #b49348;
+  }
+
+
+  .descricao-produto summary{
+    font-size: 40px;
+    font-family: "Por Siempre Gotica", "cursive";
+    box-shadow: 0 1px black;
+
+  }
+
+  .descrition-p{
+    font-family: "WigendaTypewrite Bold", "cursive";
+  }
+
+  
+
+
+
+
+
+
+
+
+  .conteudo-principal {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #d8ad75;
+    box-shadow: -1px 1px 10px burlywood;
+    border-radius: 8px;
+}
+
+.conteudo-principal h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Por Siempre Gotica", "cursive";
+    text-shadow: -1px 1px #333;
+}
+
+.conteudo-principal p {
+    line-height: 2;
+    margin-bottom: 15px;
+    font-family: "WigendaTypewrite Bold", "cursive";
+
+}
+
+
+
+
+
+
+
+
+
+
+.main-contato{
+    padding: 40px;
+  font-family: 'Georgia', serif;
+  color: #000000;
+  text-align: center;
+}
+
+.main-contato h1{
+    font-family: "Por Siempre Gotica", "cursive";
+    font-size: 50px;
+    text-shadow: -1px 1px black;
+}
+
+.main-contato label{
+    font-family: "WigendaTypewrite Bold";
+    text-shadow: -1px 1px black;
+}
+
+.main-contato p{
+    font-family: "WigendaTypewrite Bold", "cursive";
+    padding-top: 10px;
+    color: #f0c769;
+    text-shadow: -1px 1px 3px black,
+    1px -1px 3px black,
+    1px 1px 3px black,
+    -1px -1px 3px black;
+}
+
+form{
+    max-width: 600px;
+  margin: 0 auto;
+  background-color: #b99a52;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.text-contato , .input-contato{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 1rem;
+    font-family: 'WigendaTypewrite Bold', serif;
+}
+
+.botao-contato{
+    background-color: rgb(236, 192, 134);
+  color: rgb(83, 57, 26);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "WigendaTypewrite Bold", "cursive";
+  font-size: 25px;
+}
+
+.botao-contato:hover{
+    background-color: #444;
+}
 
 
 
@@ -212,7 +495,9 @@ align-items: flex-start;
 
 
 
-footer{
+
+
+.rodape-relative{
     bottom: 0;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -220,6 +505,22 @@ footer{
     padding: 20px;
     color: #F5E9A3;
     position: relative;
+}
+
+.rodape-absolute{
+    
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #9b7c32;
+    padding: 20px 0;
+    color: #F5E9A3;
+    position: absolute;
+    width: 100%;
+}
+
+.rodape-absolute div h2, p{
+    padding-left: 50px;
 }
 
 footer h2{
@@ -255,4 +556,301 @@ footer h2{
     justify-content: center;
     border-top: 1px solid #ddcc68;
     padding-bottom: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+        flex-direction: row-reverse; /* Coloca logo e navegação em coluna */
+        align-items: center; /* Centraliza os itens */
+        padding: 10px; /* Diminui o padding */
+    width: 101vw;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Coloca os itens da lista em coluna */
+        padding-left: 0; /* Remove o padding esquerdo */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    header nav ul li a {
+        padding-right: 0 !important; /* Remove o padding direito */
+        padding: 5px; /* Adiciona um pouco de padding vertical */
+        font-size: 30px; /* Diminui a fonte */
+        width: 100%; /* Faz os links ocuparem toda a largura */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    header img {
+        max-width: 220px; /* Diminui o tamanho do logo */
+        margin-bottom: 1px; /* Adiciona espaço abaixo do logo */
+    }
+
+    .Lancamento-inicio {
+        flex-direction: column; /* Coloca o título e a imagem em coluna */
+        align-items: center; /* Centraliza os itens */
+        gap: 20px; /* Diminui o espaço entre eles */
+    }
+
+    .Lancamento-inicio img {
+        max-width: 200px; /* Diminui a imagem de lançamento */
+    }
+
+    .titulo-inicio {
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-top: 30px; /* Ajusta a margem superior */
+        font-size: 40px; /* Diminui a fonte do título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .main-inicio {
+        margin-left: 20px; /* Diminui a margem esquerda */
+        margin-right: 20px; /* Diminui a margem direita */
+        margin-top: 10px; /* Ajusta a margem superior */
+    }
+
+    .main-inicio div {
+        flex-direction: column; /* Coloca texto e imagem em coluna */
+        align-items: center; /* Centraliza os itens */
+        gap: 20px; /* Adiciona espaço entre texto e imagem */
+    }
+
+    .main-inicio p {
+        max-width: 100%; /* O texto ocupa toda a largura */
+        font-size: 16px; /* Aumenta um pouco a fonte para melhor leitura */
+        padding: 10px; /* Adiciona um pouco de padding interno */
+    }
+
+    .main-inicio img {
+        max-height: 200px; /* Diminui as imagens do conteúdo */
+    }
+
+    .div1-inicio,
+    .div2-inicio,
+    .div3-inicio {
+        flex-direction: column; /* Garante que as divs internas também se ajustem */
+        align-items: center;
+        padding-left: 0; /* Remove padding esquerdo */
+        padding-right: 0; /* Remove padding direito */
+        gap: 20px; /* Espaço entre os elementos dentro da div */
+    }
+
+    .div2-inicio img {
+        padding-top: 0; /* Remove o padding superior */
+    }
+
+    .rodape-relative,
+    .rodape-absolute {
+        position: relative; /* Garante que o rodapé se comporte normalmente */
+        border-radius: 0; /* Remove as bordas arredondadas */
+        padding: 20px; /* Ajusta o padding */
+        width: 100%;
+    }
+
+    .rodape {
+        flex-direction: column; /* Coloca as seções do rodapé em coluna */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .rodape div {
+        margin-bottom: 20px; /* Adiciona espaço entre as seções */
+    }
+
+    .rodape-absolute div h2,
+    .rodape-absolute div p {
+        padding-left: 0; /* Remove o padding esquerdo */
+        text-align: center; /* Centraliza o texto */
+    }
+
+
+
+    .produtos-carousel-container {
+        margin: 20px 10px; /* Diminui as margens laterais */
+        padding: 15px; /* Diminui o padding interno */
+    }
+
+    .produtos-carousel {
+        gap: 3px; /* Diminui o espaço entre os produtos */
+    }
+
+    .produto {
+        min-width: 140px; /* Diminui a largura mínima dos produtos */
+        max-width: 140px; /* Diminui a largura máxima dos produtos */
+    }
+
+    .produto img {
+        max-width: 140px; /* Garante que a imagem não ultrapasse a largura do produto */
+    }
+
+    .produto p {
+        font-size: 12px; /* Diminui a fonte do nome do produto */
+        padding: 5px; /* Aumenta um pouco o padding para melhor leitura */
+    }
+
+    .carousel-btn {
+        font-size: 20px; /* Diminui o tamanho dos botões do carrossel */
+        padding: 8px; /* Diminui o padding dos botões */
+    }
+
+    .carousel-btn.left {
+        left: 2px; /* Ajusta a posição dos botões */
+    }
+
+    .carousel-btn.right {
+        right: 2px; /* Ajusta a posição dos botões */
+    }
+
+
+
+
+
+
+
+
+
+    .produto-compra {
+        margin: 20px; /* Diminui as margens laterais */
+        padding: 15px; /* Diminui o padding interno */
+    }
+
+    .produto-detalhe {
+        flex-direction: column; /* Coloca imagem e info em coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .produto-compra img {
+        max-width: 100%; /* A imagem ocupa toda a largura */
+        margin-right: 0; /* Remove a margem direita */
+        margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+    }
+
+    .inform-compra {
+        padding-left: 0; /* Remove o padding esquerdo */
+        align-items: center; /* Centraliza o conteúdo */
+        text-align: center; /* Centraliza o texto dentro da div */
+    }
+
+    .inform-compra h1 {
+        font-size: 40px; /* Diminui a fonte do título */
+        margin-bottom: 20px;
+    }
+
+    .inform-compra label {
+        font-size: 18px; /* Diminui a fonte dos labels */
+    }
+
+    .campos {
+        padding: 8px; /* Aumenta um pouco o padding dos campos */
+        font-size: 16px; /* Aumenta um pouco a fonte dos campos */
+    }
+
+    .botoes {
+        flex-direction: column; /* Coloca os botões em coluna */
+        width: 100%; /* Faz os botões ocuparem toda a largura */
+    }
+
+    .botao {
+        padding: 10px; /* Aumenta o padding dos botões */
+        font-size: 16px; /* Aumenta a fonte dos botões */
+        width: 100%; /* Garante que os botões ocupem toda a largura */
+    }
+
+    .descricao-produto {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    .descricao-produto summary {
+        font-size: 28px; /* Diminui a fonte do summary em telas menores */
+    }
+
+    .descrition-p {
+        font-size: 14px; /* Diminui a fonte da descrição em telas menores */
+    }
+
+    .descrition-p h3 {
+        font-size: 18px; /* Diminui a fonte dos títulos das notas olfativas */
+    }
+
+
+
+
+
+
+
+    .conteudo-principal {
+        padding: 10px;
+        margin: 15px;
+        
+    }
+
+    .conteudo-principal h1 {
+        font-size: 24px; /* Diminui o tamanho da fonte do título */
+        margin-bottom: 15px;
+    }
+
+    .conteudo-principal p {
+        font-size: 16px; /* Aumenta um pouco a legibilidade do texto */
+        line-height: 1.7; /* Melhora a leitura em telas menores */
+        margin-bottom: 10px;
+        
+    }
+
+
+
+
+
+
+
+    
+    .main-contato {
+        padding: 15px; /* Diminui ainda mais o padding em telas menores */
+    }
+
+    .main-contato h1 {
+        font-size: 30px; /* Diminui ainda mais o título */
+    }
+
+    .main-contato p {
+        font-size: 14px; /* Diminui o tamanho da fonte do parágrafo */
+    }
+
+    .main-contato label {
+        font-size: 16px; /* Diminui ainda mais o tamanho do label */
+    }
+
+    form {
+        padding: 15px; /* Diminui o padding do formulário em telas menores */
+    }
+
+    .text-contato, .input-contato {
+        padding: 8px; /* Diminui o padding dos campos em telas menores */
+        font-size: 0.8rem; /* Diminui ainda mais a fonte dos campos */
+    }
+
+    .botao-contato {
+        font-size: 18px; /* Diminui o tamanho da fonte do botão em telas menores */
+        padding: 10px; /* Diminui o padding do botão em telas menores */
+    }
 }

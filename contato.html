@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Rêverie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<audio id="musica-fundo" loop>
+    <source src="ojos.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+  
+  <script>
+    const audio = document.getElementById('musica-fundo');
+const startTime = 1; // define o ponto inicial (em segundos)
+
+// Quando o usuário passar o mouse sobre o body, a música tocará a partir do segundo 20.
+document.body.addEventListener('mouseover', () => {
+  // Se o áudio estiver antes do segundo 20, ajusta para começar a partir daí.
+  if (audio.currentTime < startTime) {
+    audio.currentTime = startTime;
+  }
+  audio.play();
+});
+
+  </script>
+
+
+
+
+
+<body>
+
+    <header>
+        <!-- Palavras como "Início" e "Nós" não estão com seus devidos acentos, pois a fonte não permite. Favor não considerar erro, obrigado.-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre nos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <img src="img/Gemini_Generated_Image_d7i4kzd7i4kzd7i4-removebg-preview.png" alt="Logo da empresa">
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main class="main-contato">
+
+    <h1>Entre em Contato</h1>  
+
+    <p> Escreva para nós como quem envia uma carta em meio à neblina. Cada palavra será lida com alma.</p>
+    <br><br>
+
+    <form>
+        <label  for="nome">Nome completo</label><br>
+        <input class="input-contato" type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail</label><br>
+        <input class="input-contato" type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem</label><br>
+        <textarea class="text-contato" id="mensagem" name="mensagem" rows="6" required></textarea><br><br>
+
+        <button class="botao-contato" type="submit">Enviar mensagem</button>
+    </form>
+
+    
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="rodape-relative">
+    
+    <div>
+        <h2>Rêverie</h2>
+        <p>-perfumes artesanais para os que sentem demais-</p>
+    </div>
+    <br>
+<div class="rodape">
+
+<div>
+    <h4>Contato</h4>
+    <ul>
+        <li class="links-rodape">(99) 99999-9999</li>
+        <li class="links-rodape">reverie@gmail.com</li>
+        <li><a class="links-rodape" href="">Reclame aqui!</a></li>
+    </ul>
+</div>
+
+<div>
+    <h4>Redes sociais</h4>
+    <ul>
+        <li>Instagram: <a class="links-rodape" href="">@reverie</a></li>
+        <li>Facebook: <a class="links-rodape" href="">Rêverie Oficial</a></li>
+    </ul>
+</div>
+
+<div>
+<h4>Informações adicionais</h4>
+<ul>
+    <li>CNPJ: 12.345.678/0001-90</li>
+    <li><a class="links-rodape" href="">Termos de uso</a></li>
+    <li><a class="links-rodape" href="">Política de privacidade</a></li>
+    <li><a class="links-rodape" href="">Trocas e devoluções</a></li>
+</ul>
+</div>
+
+</div>
+<br>
+<div class="copyright-rodape">
+      <h3>&copy; 2025 Rêverie</h3>
+</div>
+   </footer>
+  
+  
+  
+         
+
+</body>
+</html>

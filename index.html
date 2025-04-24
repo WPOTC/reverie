@@ -6,6 +6,39 @@
     <title>Rêverie</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<audio id="musica-fundo" loop>
+    <source src="ojos.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+  
+  <script>
+    const audio = document.getElementById('musica-fundo');
+const startTime = 1; // define o ponto inicial (em segundos)
+
+// Quando o usuário passar o mouse sobre o body, a música tocará a partir do segundo 20.
+document.body.addEventListener('mouseover', () => {
+  // Se o áudio estiver antes do segundo 20, ajusta para começar a partir daí.
+  if (audio.currentTime < startTime) {
+    audio.currentTime = startTime;
+  }
+  audio.play();
+});
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
 
     <header>
@@ -14,12 +47,12 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="">Sobre nos</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="sobre.html">Sobre nos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
        
-        <img src="img/" alt="Logo da empresa">
+        <img src="img/Gemini_Generated_Image_d7i4kzd7i4kzd7i4-removebg-preview.png" alt="Logo da empresa">
 
     </header>
     
@@ -67,7 +100,7 @@
 
    </main>
 
-   <footer>
+   <footer class="rodape-relative">
     
     <div>
         <h2>Rêverie</h2>

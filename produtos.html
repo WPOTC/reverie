@@ -6,6 +6,55 @@
     <title>Rêverie</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+    let currentScroll = 0;
+
+    function scrollCarousel(direction) {
+        const carousel = document.getElementById("carousel");
+        const itemWidth = 290; // 200px largura + 90px gap
+        const itemsToScroll = 2;
+        const scrollAmount = itemWidth * itemsToScroll;
+
+        currentScroll += direction * scrollAmount;
+
+        // Impede de ir além dos limites
+        if (currentScroll < 0) currentScroll = 0;
+        if (currentScroll > carousel.scrollWidth - carousel.clientWidth) {
+            currentScroll = carousel.scrollWidth - carousel.clientWidth;
+        }
+
+        carousel.scrollTo({ left: currentScroll, behavior: 'smooth' });
+    }
+
+;
+
+
+</script>
+
+<audio id="musica-fundo" loop>
+    <source src="ojos.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+
+<script>
+    const audio = document.getElementById('musica-fundo');
+const startTime = 1; // define o ponto inicial (em segundos)
+
+// Quando o usuário passar o mouse sobre o body, a música tocará a partir do segundo 20.
+document.body.addEventListener('mouseover', () => {
+  // Se o áudio estiver antes do segundo 20, ajusta para começar a partir daí.
+  if (audio.currentTime < startTime) {
+    audio.currentTime = startTime;
+  }
+  audio.play();
+});
+</script>
+
+
+
+
+
 <body>
 
     <header>
@@ -13,9 +62,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="">Sobre nos</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre nos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
        
@@ -23,47 +72,52 @@
 
     </header>
 
-   
+   <div class="produtos-tocansado">
+      <div class="imagem-linha">
+        <img src="img/ChatGPT_Image_5_de_abr._de_2025__20_49_27-removebg-preview.png" alt="">
+      </div>
 
-    <section class="produtos">
 
-        <div><a class="link-produtos" href="IIAG-perfum100ml.html">
-     <img src="img/Gemini_Generated_Image_iyh175iyh175iyh1.jpg" alt="perfume 100ml">
-     <p>Incident in a ghostland - Perfume 100ml</p>
-    </a>
-</div>
-
-       <div><a class="link-produtos" href="">
-        <img src="img/Gemini_Generated_Image_vwx3movwx3movwx3.jpg" alt="kit perfume 50ml + sabonete">
-        <p>Kit Incident in a Ghostland - Perfume 50ml + Sabonete</p>
-    </a>
-       </div>
-
-       <div><a class="link-produtos" href="">
-        <img src="img/Gemini_Generated_Image_wmfljmwmfljmwmfl.jpg" alt="vela aromatizada">
-        <p>Incident in a ghostland - Vela Aromatizada</p>
-    </a>
-       </div>
-
-       <div><a class="link-produtos" href="">
-        <img  src="img/Gemini_Generated_Image_pnnikepnnikepnni.jpg" alt="Caixa de sabonetes">
-        <p>Incident in a ghostland - Caixa de Sabonetes (8 unidades)</p>
-    </a>
-       </div>
-
-       <div><a class="link-produtos" href=""></a>
-        <img  src="img/Gemini_Generated_Image_skcri7skcri7skcr.jpg" alt="óleo corporal">
-        <p>Incident in a ghostland - Óleo Corporal 200ml</p>
-</a>
-    </div>
-
-       <div><a class="link-produtos" href="">
-        <img src="img/Gemini_Generated_Image_mmlwjvmmlwjvmmlw.jpg" alt="Creme hidratante">
-        <p>Incident in a ghostland - Creme Hidratante</p>
-    </a>
-       </div>
-
+    <section class="produtos-carousel-container">
+        <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+    
+        <div class="produtos-carousel" id="carousel">
+            <div class="produto"><a class="link-produtos" href="IIAG-perfum100ml.html">
+                <img src="img/Gemini_Generated_Image_iyh175iyh175iyh1.jpg" alt="perfume 100ml">
+                <p>Incident in a ghostland - Perfume 100ml</p>
+            </a></div>
+    
+            <div class="produto"><a class="link-produtos" href="IIAG-kit.html">
+                <img src="img/Gemini_Generated_Image_vwx3movwx3movwx3.jpg" alt="kit perfume 50ml + sabonete">
+                <p>Kit Incident in a Ghostland - Perfume 25ml + Sabonete</p>
+            </a></div>
+    
+            <div class="produto"><a class="link-produtos" href="IIAG-vela.html">
+                <img src="img/Gemini_Generated_Image_wmfljmwmfljmwmfl.jpg" alt="vela aromatizada">
+                <p>Incident in a ghostland - Vela Aromatizada</p>
+            </a></div>
+    
+            <div class="produto"><a class="link-produtos" href="IIAG-sabonetes.html">
+                <img src="img/Gemini_Generated_Image_pnnikepnnikepnni.jpg" alt="Caixa de sabonetes">
+                <p>Incident in a ghostland - Caixa de Sabonetes (8 unidades)</p>
+            </a></div>
+    
+            <div class="produto"><a class="link-produtos" href="IIAG-oleo.html">
+                <img src="img/Gemini_Generated_Image_skcri7skcri7skcr.jpg" alt="óleo corporal">
+                <p>Incident in a ghostland - Óleo Corporal 200ml</p>
+            </a></div>
+    
+            <div class="produto"><a class="link-produtos" href="IIAG-hidratante.html">
+                <img src="img/Gemini_Generated_Image_mmlwjvmmlwjvmmlw.jpg" alt="Creme hidratante">
+                <p>Incident in a ghostland - Creme Hidratante</p>
+            </a></div>
+        </div>
+    
+        <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
     </section>
+</div>
+    <br>
+    
 
 
 
@@ -81,7 +135,7 @@
 
 
 
-    <footer>
+    <footer class="rodape-relative">
     
         <div>
             <h2>Rêverie</h2>
