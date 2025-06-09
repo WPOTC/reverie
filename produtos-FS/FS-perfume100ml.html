@@ -9,25 +9,104 @@
 </head>
 
 
-<audio id="musica-fundo" loop>
-    <source src="../faeriesoiree.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio HTML5.
-  </audio>
-  
-  <script>
-    const audio = document.getElementById('musica-fundo');
-const startTime = 1; // define o ponto inicial (em segundos)
 
-// Quando o usuário passar o mouse sobre o body, a música tocará a partir do segundo 20.
-document.body.addEventListener('mouseover', () => {
-  // Se o áudio estiver antes do segundo 20, ajusta para começar a partir daí.
-  if (audio.currentTime < startTime) {
-    audio.currentTime = startTime;
+<style>
+  .mensagem-topo {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
   }
-  audio.play();
-});
+</style>
 
-  </script>
+<div class="mensagem-topo" id="mensagemTopo">Lamento, mas você não é digno.</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const botao = document.getElementById('calcularFrete');
+    const mensagem = document.getElementById('mensagemTopo');
+
+    botao.addEventListener('click', function () {
+      mensagem.style.opacity = '1';
+
+      setTimeout(() => {
+        mensagem.style.opacity = '0';
+      }, 3000); // Some após 3 segundos
+    });
+  });
+</script>
+
+<div class="mensagem-topo" id="mensagemTopo">Lamento, mas você não é digno.</div>
+
+<style>
+  .mensagem-topo {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const mensagem = document.getElementById('mensagemTopo');
+
+    // Botão Calcular Frete
+    const btnCalcular = document.getElementById('calcularFrete');
+    if (btnCalcular) {
+      btnCalcular.addEventListener('click', function () {
+        mostrarMensagem();
+      });
+    }
+
+    // Botão Comprar (pega o segundo botão .botao-fairy)
+    const botoes = document.querySelectorAll('.botao-fairy');
+    if (botoes.length > 1) {
+      const btnComprar = botoes[1];
+      btnComprar.addEventListener('click', function () {
+        mostrarMensagem();
+      });
+    }
+
+    function mostrarMensagem() {
+      mensagem.style.opacity = '1';
+      setTimeout(() => {
+        mensagem.style.opacity = '0';
+      }, 3000);
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -49,22 +128,25 @@ document.body.addEventListener('mouseover', () => {
 
     </header>
 
+    <main class="main-products">
     <section class="produto-compra-fairy">
         <div class="produto-detalhe">
             <img src="../img-faeriesoiree/Gemini_Generated_Image_tf77uxtf77uxtf77.jpeg"" alt="perfume 100ml">
 
             <div class="inform-compra-fairy">
                 <h1>Faerie Soirée - Perfume 100ml</h1>
-                <h3>R$459,90</h3>
+                <h3>R$459,90</h3> 
                 <label for="quantidade">Quantidade:</label>
                 <input class="campos" type="number" name="quantidade" max="10" min="1" value="1">
-
+<div>
                 <label for="cep">Calcular frete:</label>
-                <input class="campos" type="text" id="cep" placeholder="Digite seu CEP" maxlength="9">
+                <input class="campos" type="text" id="cep" placeholder="Digite seu CEP" maxlength="9" required>
 
                 <div class="botoes">
-                    <button class="botao-fairy">Calcular</button>
+                    <button class="botao-fairy" id="calcularFrete">Calcular</button>
                 </div>
+            </div>
+            
                 <div class="botoes">
                     <button class="botao-fairy">Comprar</button>
                 </div>
@@ -117,7 +199,7 @@ document.body.addEventListener('mouseover', () => {
             <p class="descrition-p">Família olfativa: Frutado-amadeirado-floral</p>
         </details>
     </section>
-
+</main>
 
 
 
