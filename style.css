@@ -41,6 +41,7 @@ header {
      display: flex; 
      justify-content: space-around; 
      border: 0.1vh solid #d6b855; background: #9b7c32; 
+     width: 100%;
     } 
 
 header nav ul {
@@ -409,7 +410,8 @@ form {
     background-color: #9b7c32; 
     padding: 1.25rem;  
     color: #F5E9A3; 
-    position: relative; } 
+    position: relative;
+width: 100%; } 
 
 .rodape-absolute { 
     bottom: 0; 
